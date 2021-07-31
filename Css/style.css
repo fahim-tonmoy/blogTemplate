@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background: url(../image/sa.png) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: inline-block;
+}
+
+.text {
+  width: 50%;
+  height: 300opx;
+  margin: 250px 120px;
+}
+
+.text h1,
+.text p {
+  font-weight: bolder;
+}
+
+.crd {
+  margin-top: -150px;
+}
+
+.crd-bdy {
+  /* padding-left: 80px !important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card,
+.card img {
+  border-radius: 50px !important;
+}
