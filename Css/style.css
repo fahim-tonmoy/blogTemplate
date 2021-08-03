@@ -7,9 +7,16 @@ body {
   background-color: #e5e5e5 !important;
 }
 
+section {
+  /* width: fit-content; */
+  width: 100%;
+}
+
 .banner {
   background: url(../image/sa.png) no-repeat;
   background-size: cover;
+  /* background-position: center center; */
+  background-origin: inherit;
   min-height: 60vh;
   display: inline-block;
 }
@@ -72,4 +79,14 @@ body {
 
 .btn-p {
   background-color: #ffbb6e !important;
+}
+
+/* Product page */
+.prod-img {
+  width: 100px;
+}
+
+.prod-img img {
+  width: 700px;
+  height: 400px;
 }
