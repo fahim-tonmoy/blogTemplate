@@ -83,10 +83,17 @@ section {
 
 /* Product page */
 .prod-img {
-  width: 100px;
+  width: auto;
+  height: 50%;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
 
 .prod-img img {
-  width: 700px;
-  height: 400px;
+  height: 100% !important;
+}
+
+.star-clr {
+  color: #ffbb6e;
 }
