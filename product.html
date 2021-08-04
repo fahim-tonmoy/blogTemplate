@@ -53,7 +53,7 @@
         </form>
       </div>
     </nav>
-
+<!-- top section -->
     <section>
       <div class="container-fluid">
         <div class="row">
@@ -63,7 +63,8 @@
             </div>
             <div class="p-2 mb-2  overflow-hidden" style="border: 1px solid #ffbb6e;">
               <h3>Product Description</h3>
-              <p class="text-justify pr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, modi iure saepe ipsa alias ducimus voluptates deserunt, cumque hic est commodi error praesentium vero asperiores quasi pariatur laboriosam nobis, quos quam esse molestias a voluptas! Vero, necessitatibus quidem omnis maxime placeat fuga, explicabo facilis modi impedit nesciunt id nulla ipsum!</p>
+              <p class="text-justify pr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, modi iure saepe ipsa alias ducimus voluptates deserunt, <span id="dots">...</span><span id="more">cumque hic est commodi error praesentium vero asperiores quasi pariatur laboriosam nobis, quos quam esse molestias a voluptas! Vero, necessitatibus quidem omnis maxime placeat fuga, explicabo facilis modi impedit nesciunt id nulla ipsum!</span></p>
+              <button onclick="myFunction()" id="myBtn" class="btn btn-p" style="border-radius: 10px;">Read more</button>
             </div>
           </div>
           <div class="col-md-4">
@@ -202,10 +203,44 @@
             <i class="fas fa-star star-clr"></i>
             <p class="mb-0">6/25/21 by <span class="font-weight-bolder">Mary</span></p>
             <p class="mt-0">Light weight, silicone, easy to put on and take off the phone, hands free. Perfect!</p>
+
+            <br>
+            <br>
+            <br>
+            <div class="ml-4" style="color: #ffbb6e;">
+              <i class="fab fa-facebook-square fa-3x ml-2"></i>
+              <i class="fab fa-instagram fa-3x ml-2"></i>
+              <i class="fab fa-linkedin fa-3x ml-2"></i>
+              <i class="fab fa-twitter-square fa-3x ml-2"></i>
+            </div>
           </div>
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mt-2 p-3">
+          <div class="row ">
+            <div class="col-12 col-sm-6 col-md-12 mt-2">
+              <div class="text-center d-flex justify-content-center">
+                <div class="card" style="width: 12rem; height: 400px;">
+                  <img src="./image/img_avatar1.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go</a>
+                  </div>
+            </div>
+          </div>
+            </div>
+            <div class="col-12 col-xs-6 col-xs-6 col-sm-6 col-md-12 mt-2">
+              <div class="text-center d-flex justify-content-center">
+                <div class="card" style="width: 12rem; height: 400px;">
+                  <img src="./image/img_avatar1.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go</a>
+                  </div>
+            </div>
+          </div>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -232,6 +267,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -242,6 +278,25 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    
+    <script>
+      function myFunction() {
+  let dots = document.getElementById("dots");
+  let moreText = document.getElementById("more");
+  let btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Less";
+    moreText.style.display = "inline";
+  }
+}
+
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

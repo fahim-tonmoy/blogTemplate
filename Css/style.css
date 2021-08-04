@@ -97,3 +97,7 @@ section {
 .star-clr {
   color: #ffbb6e;
 }
+
+#more {
+  display: none;
+}
