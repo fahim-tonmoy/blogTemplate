@@ -45,13 +45,13 @@ section {
 
 .t-crd,
 .crd-img {
-  box-shadow: 5px 7px 30px rgb(109, 108, 108) !important;
+  box-shadow: 5px 7px 15px rgb(109, 108, 108) !important;
 }
 
 .t-crd,
 .crd-img,
 .crd-img img {
-  border-radius: 30px !important;
+  border-radius: 20px !important;
 }
 
 .trending {
